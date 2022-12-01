@@ -13,6 +13,11 @@ const Activity = () => {
     }, [])
 
 
+    const handleCard = () =>{
+
+    }
+
+
     return (
         <div className='activity-container lg:ml-32 lg:mr-32 mb-32'>
 
@@ -23,6 +28,7 @@ const Activity = () => {
                 products.map(product => <ActivityCard
                     key={product.id}
                     product = {product}
+                    handleCard = {handleCard}
                     ></ActivityCard>)
             }
             </div>
