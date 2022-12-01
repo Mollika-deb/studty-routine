@@ -4,6 +4,7 @@ import ActivityCard from './ActivityCard';
 
 const Activity = () => {
     const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(()=>{
         fetch('data.json')
@@ -13,7 +14,9 @@ const Activity = () => {
     }, [])
 
 
-    const handleCard = () =>{
+    const handleCard = (product) =>{
+        console.log(product);
+        const newCart = [...cart, product];
 
     }
 

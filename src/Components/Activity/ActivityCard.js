@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ActivityCard = ({product}) => {
+const ActivityCard = ({product, handleCard}) => {
     const { img_url, img_title, description, time } = product
     return (
         <div className="card w-96  bg-base-200 shadow-2xl">
@@ -12,7 +12,7 @@ const ActivityCard = ({product}) => {
                 <p className='font-bold'>{description.slice(0, 50)}..</p>
                 <p className='bg-red-400 p-3 font-bold text-white rounded-xl'>Study time: {time}</p>
                 <div className="card-actions">
-                    <button className="btn  bg-green-700 w-64">Add To List</button>
+                    <button onClick={()=> handleCard(product)} className="btn  bg-green-700 w-64">Add To List</button>
                 </div>
             </div>
         </div>
