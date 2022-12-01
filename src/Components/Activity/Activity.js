@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import './Activity.css'
 import ActivityCard from './ActivityCard';
 
@@ -22,10 +23,10 @@ const Activity = () => {
 
 
     return (
-        <div className='activity-container lg:ml-32 lg:mr-32 mb-32'>
+        <div className='activity-container lg:ml-32 lg:mr-24 mb-32'>
 
 
-            <div className='grid gap-6 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1'>
+            <div className='mr-15 grid gap-x-8 gap-y-8 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1'>
            
             {
                 products.map(product => <ActivityCard
@@ -36,8 +37,9 @@ const Activity = () => {
             }
             </div>
 
-            <div className=''>
-            <h1>Cart</h1>
+            <div className='ml-10 rounded-xl 
+            shadow-2xl bg-pink-300 h-1/2'>
+            <Cart></Cart>
             </div>
     
         </div>

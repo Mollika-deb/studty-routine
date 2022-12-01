@@ -3,7 +3,7 @@ import React from 'react';
 const ActivityCard = ({product, handleCard}) => {
     const { img_url, img_title, description, time } = product
     return (
-        <div className="card w-96  bg-base-200 shadow-2xl">
+        <div className="card w-96  bg-teal-100 shadow-2xl">
             <figure className="px-10 pt-10">
                 <img src={img_url} alt="Shoes" className="rounded-xl h-64 w-full" />
             </figure>
