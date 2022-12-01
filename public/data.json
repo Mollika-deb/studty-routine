@@ -1,0 +1,45 @@
+[
+
+    {   "id": "1",
+        "img_url" : "https://i.ibb.co/QvXTFT4/Python-in-Education.gif",
+       "img_title" : "Python",
+       "description" : "Python can be used for everything from web development to software development and data science applications.",
+       "time":"55m"
+    },
+    {
+        "id": "2",
+        "img_url" : "https://i.ibb.co/89zk42C/images-q-tbn-ANd9-Gc-SL0xy-Xvk-T7-Kt-N71w-T5-Wi-e-Ph6qblu-My6q-FDDm-5-Nqh84-YY56fz.jpg",
+       "img_title" : "Machine Learning",
+       "description" : "Machine learning has become more and more integrated into our lives. It is the branch of AI that powers chatbots etc.",
+       "time":"40m"
+    },
+    {
+        "id": "3",
+        "img_url" : "https://i.ibb.co/5s5yNNP/1118093755.jpg",
+       "img_title" : "Operating System",
+       "description" : "An operating system serves as a link between the user and the device's hardware. It is responsible for all functions of the system.",
+       "time":"50m"
+    },
+    {
+        "id": "4",
+        "img_url" : "https://iotvnaw69daj.i.optimole.com/cb:n2y9~6666f/w:auto/h:auto/q:mauto/f:avif/https://www.codeinwp.com/wp-content/uploads/2020/08/JavaScript-The-Good-Parts-1.jpg",
+       "img_title" : "Javascript",
+       "description" : "JavaScript is one of the leading names when it comes to front-end web development. Moreover, it is one of the best programming languages",
+       "time":"40m"
+    },
+    {
+        "id": "5",
+        "img_url" : "https://m.media-amazon.com/images/I/513P8XoCAEL.jpg",
+       "img_title" : "Algorithm",
+       "description" : "An algorithm is a well-defined computational procedure that takes some value as input and generates some value as output.",
+       "time":"30m"
+    },
+    {
+        "id": "6",
+        "img_url" : "https://m.media-amazon.com/images/I/51gOcNM4yDL._AC_SY780_.jpg",
+       "img_title" : "Data Structure",
+       "description" : "Data Structures covers the implementation and analysis of data structures for sequences, queues, priority queues .",
+       "time":"40m"
+    }
+    
+]
