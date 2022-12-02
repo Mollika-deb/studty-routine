@@ -18,6 +18,7 @@ const Activity = () => {
     const handleCard = (product) =>{
         console.log(product);
         const newCart = [...cart, product];
+        setCart(newCart);
 
     }
 
@@ -39,7 +40,7 @@ const Activity = () => {
 
             <div className='ml-10 rounded-xl 
             shadow-2xl bg-pink-300 h-1/2'>
-            <Cart></Cart>
+            <Cart cart={cart}></Cart>
             </div>
     
         </div>
