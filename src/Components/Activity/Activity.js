@@ -79,6 +79,7 @@ const Activity = () => {
             </div>
             <Cart cart={cart}></Cart>
             </div>
+            
     
         </div>
     );
