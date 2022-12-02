@@ -15,7 +15,7 @@ const Cart = ({cart}) => {
         <div>
             <p>selected item : {cart.length}</p>
             <h2>Study Details</h2>
-            <h1>Study Time:{total} </h1>
+            <h1>Study Time:{total}m </h1>
             <h1>Break Time: </h1>
 
         </div>

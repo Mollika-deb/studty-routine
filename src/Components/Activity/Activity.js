@@ -39,7 +39,7 @@ const Activity = () => {
             </div>
 
             <div className='ml-10 rounded-xl 
-            shadow-2xl bg-pink-300 h-1/2'>
+            shadow-2xl bg-pink-300 h-1/2 sticky top-0'>
             <Cart cart={cart}></Cart>
             </div>
     
