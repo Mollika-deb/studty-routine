@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { addToDb, getStoredCart } from '../../utilities/Storage';
 import Cart from '../Cart/Cart';
+import Profle from '../Profile/Profle';
 import './Activity.css'
 import ActivityCard from './ActivityCard';
+
 
 const Activity = () => {
     const [products, setProducts] = useState([]);
@@ -69,8 +71,12 @@ const Activity = () => {
             }
             </div>
 
-            <div className='ml-10 rounded-xl 
-            shadow-2xl bg-pink-300 h-1/2 sticky top-0'>
+            <div className='ml-10 rounded-xl shadow-2xl bg-rose-300 h-1/2 sticky top-0'>
+            
+
+            <div className='mb-32'>
+                    <Profle></Profle>
+            </div>
             <Cart cart={cart}></Cart>
             </div>
     

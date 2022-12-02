@@ -15,10 +15,11 @@ const Cart = ({cart}) => {
   
     return (
         <div>
-            <p>selected item : {quantity}</p>
-            <h2>Study Details</h2>
-            <h1>Study Time:{total}m </h1>
-            <h1>Break Time: </h1>
+           
+            <h2 className='text-1xl font-bold bg-slate-300 rounded-xl shadow-2xl mx-3  p-2'>Study Details : </h2>
+            <h1 className='text-1xl font-bold mt-3 bg-slate-300 p-2 mx-3 rounded-2xl shadow-2xl p-4'>Study Time:{total}m </h1>
+            <h1 className='text-1xl font-bold mt-3 bg-slate-300 p-2 mx-3 rounded-2xl shadow-2xl p-4'>Break Time: </h1>
+            <button className='text-1xl  font-bold mt-3 bg-slate-400 px-14 mx-3 rounded-2xl shadow-2xl p-4'>Activity completed</button>
 
         </div>
     );
