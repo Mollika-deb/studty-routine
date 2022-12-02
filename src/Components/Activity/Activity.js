@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { addToDb, getStoredCart } from '../../utilities/Storage';
 import Cart from '../Cart/Cart';
 import './Activity.css'
 import ActivityCard from './ActivityCard';
@@ -12,13 +13,43 @@ const Activity = () => {
         .then(res => res.json())
         .then(data => setProducts(data))
 
-    }, [])
+    }, []);
+
+     useEffect(() =>{
+         const storedCart = getStoredCart();
+         console.log(storedCart);
+        const savedcart = [];
+        for(const id in storedCart){
+            const addedeActivity = products.find(product=> product.id === id);
+           
+           if(addedeActivity){
+             const quantity = storedCart[id];
+            addedeActivity.quantity = quantity;
+             savedcart.push(addedeActivity);
+            
+           }
+        }
+        setCart(savedcart);
+     }, [products])
 
 
     const handleCard = (product) =>{
         console.log(product);
-        const newCart = [...cart, product];
+        let newCart = [];
+        const exists = cart.find(activity => activity.id === product.id);
+        if(!exists){
+
+            product.quantity = 1;
+            newCart = [...cart, product];
+        }
+        else{
+            const rest = cart.filter(activity => activity.id !== product.id);
+            exists.quantity = exists.quantity + 1;
+            newCart = [...rest, exists];
+        }
+        
         setCart(newCart);
+        addToDb(product.id)
 
     }
 
